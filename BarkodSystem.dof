@@ -1,0 +1,23 @@
+
+
+    if (Hesap >= 0) and (Hesap <= 18.4) then begin
+      UyariPanel.Caption := 'ZAYIF = ' + FloatToStr(Hesap);
+      Tanimi := 'ZAYIF';
+    end;
+
+    if (Hesap >= 18.5) and (Hesap <= 24.9) then begin
+      UyariPanel.Caption := 'NORMAL = ' + FloatToStr(Hesap);
+      Tanimi := 'NORMAL';
+    end;
+
+
+    if (Hesap >= 25) and (Hesap <= 29.9) then begin
+      UyariPanel.Caption := 'KİLOLU = ' + FloatToStr(Hesap);
+      Tanimi := 'KİLOLU';
+    end;
+
+
+    if Hesap >= 30 then begin
+      UyariPanel.Caption := 'OBEZ = ' + FloatToStr(Hesap);
+      Tanimi :='OBEZ';
+      end;
